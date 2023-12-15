@@ -1,0 +1,248 @@
+.navbar
+{
+    display: flex;
+    justify-content:center;
+    background-color: grey;
+    
+}
+
+/* .extra
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; */
+
+body{
+    margin: 0px;
+    padding: 0%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.navbar h2
+{
+    padding: 0px 20px;
+}
+.navbar h2:hover
+{
+    cursor: pointer;
+}
+
+.details
+{
+    position: absolute;
+    top:35%;
+    left: 10%;
+    width: 40%;
+}
+.details p{
+    line-height: 25px;
+    font-size: large;
+}
+.resume
+{
+   
+    background-color: rgb(164, 86, 203) ;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(6, 3, 2);
+    text-decoration:underline;
+}
+button:hover
+{
+    cursor: pointer;
+}
+
+.image
+{
+    /* position: relative; */
+    padding-top:120px ;
+    float: right;
+    top: 15%;
+}
+.inner
+{
+    width: 100%;
+    /* background-color: aliceblue; */
+    border-radius: 40%;
+}
+/* img{
+    z-index: -1
+} */
+.second
+{
+    height: 100vh;
+    width: 100vw;
+}
+
+.skills
+{
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    height: auto;
+    width: 40vw;
+    font-size: 25px;
+}
+.third
+{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(111, 176, 225);
+}
+.skills p{
+    padding-top: 10px;
+}
+.set
+{
+    position: relative;
+    height: 100vh;
+    width: 50vw;
+    float: right;
+}
+.set hr
+{
+    border-top: 5px solid black ;
+    border-bottom: 0px;
+    width: 50vw!important;
+}
+.set1
+{
+    position: absolute;
+    top: 10%;
+    left: 30%; 
+    width: 50%;
+}
+.set p{
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+.set2
+{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    width: 50%;
+}
+.set3
+{
+    position: absolute;
+    bottom: 8%;
+    left: 30%;
+    width: 50%;
+}
+.fourth
+{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+}
+.fourth::before
+{
+    content: "";
+    position: absolute;  
+    background-image: url(https://img.freepik.com/free-vector/blue-futuristic-waves-background-with-computer-code-technology_53876-119584.jpg);
+
+    background-size: cover;
+    /* opacity: 0.95; */
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+   
+
+}
+.fourth h1{
+    color: rgb(255, 255, 255);
+  
+    padding:0 10px;
+}
+.my{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+.pro1
+{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 25vw;
+    border: 5px solid rgb(8, 9, 7);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.fourth img 
+{
+    height: 250px;
+    width: 400px;
+}
+.pro2
+{
+    position: absolute;
+    top: 56.5%;
+    left: 37%;
+    width: 25vw;
+    border: 5px solid rgb(8, 9, 7);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.pro3
+{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 25vw;
+    border: 5px solid rgb(8, 9, 7);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.last
+{
+    height:100vh;
+    width: 100vw;
+    position: relative;
+    background-color:rgb(97, 185, 217);
+}
+.cont
+{
+    position: absolute;
+    left: 45%;
+    height: 200px;
+}
+.collab
+{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    font-size: 40px;
+
+}
+.footer
+{
+    position: absolute;
+    bottom: 4%;
+    left: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images img{
+    height: 25px;
+    border-radius: 40px;
+    padding: 0 4px;
+}
+.images img:hover
+{
+    cursor: pointer;
+}
