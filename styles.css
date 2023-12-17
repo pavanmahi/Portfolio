@@ -25,6 +25,7 @@ body{
 .navbar h2:hover
 {
     cursor: pointer;
+    color: blue;
 }
 
 .details
@@ -50,6 +51,7 @@ body{
 button:hover
 {
     cursor: pointer;
+    background-color:aqua;
 }
 
 .image
