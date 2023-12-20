@@ -190,6 +190,7 @@ button:hover
 .images2 img{
     height: 20px;
     padding: 0% 5px;
+    cursor:pointer;
 }
 @media screen and  (max-width:800px) {
     .third{
