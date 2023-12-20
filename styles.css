@@ -1,22 +1,29 @@
-.navbar
+.tags
 {
     display: flex;
     justify-content:center;
-    background-color: grey;
-    
+}
+*,html,body{
+    scroll-behavior:smooth;
+    position: relative;
 }
 
-/* .extra
+.top
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; */
-
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+}
 body{
     margin: 0px;
     padding: 0%;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow-x: hidden;    overflow-y: auto;
+}
+.navbar{
+    
+    width: 100vw;
+    z-index: 1001;
+    background-color: rgb(181, 142, 217);
 }
 .navbar h2
 {
@@ -25,19 +32,46 @@ body{
 .navbar h2:hover
 {
     cursor: pointer;
-    color: blue;
+    color:rgb(5, 36, 232);
 }
-
-.details
+.ham
 {
+    display: none;
+}
+.ham img:hover{ cursor: pointer;}
+
+.tags a,.ham a{
+    text-decoration: none;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 20px;
+    color: black;
+}
+.tags a:hover,.ham a:hover{
+    color: aqua; 
+}
+.ham img{
     position: absolute;
-    top:35%;
-    left: 10%;
-    width: 40%;
+    right: 5%;
+    top: 2%;
+}
+.second
+{
+    display: flex;
+    align-items: center;
+}
+.details,.image
+{
+    flex: 0.5;
 }
 .details p{
     line-height: 25px;
     font-size: large;
+    z-index: 1;
+}
+.details {
+    max-width: 500px;
+    margin-inline: auto;
 }
 .resume
 {
@@ -51,200 +85,156 @@ body{
 button:hover
 {
     cursor: pointer;
-    background-color:aqua;
+    background-color: aqua;
 }
-
-.image
-{
-    /* position: relative; */
-    padding-top:120px ;
-    float: right;
-    top: 15%;
-}
-.inner
-{
-    width: 100%;
-    /* background-color: aliceblue; */
-    border-radius: 40%;
-}
-/* img{
-    z-index: -1
-} */
 .second
 {
     height: 100vh;
     width: 100vw;
 }
-
-.skills
-{
-    position: absolute;
-    top: 10%;
-    left: 8%;
-    height: auto;
-    width: 40vw;
-    font-size: 25px;
-}
 .third
 {
-    position: relative;
-    height: 100vh;
+    display: flex;
+    min-height: 100vh;
     width: 100vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-color: rgb(111, 176, 225);
 }
 .skills p{
-    padding-top: 10px;
+    padding: 10px;
+    font-size: x-large;
 }
-.set
-{
-    position: relative;
-    height: 100vh;
-    width: 50vw;
-    float: right;
+.skills,.set{
+    flex: 0.5;
+    padding: 0px 20px;
+    margin-top:8% ;
 }
-.set hr
-{
-    border-top: 5px solid black ;
-    border-bottom: 0px;
-    width: 50vw!important;
-}
-.set1
-{
-    position: absolute;
-    top: 10%;
-    left: 30%; 
-    width: 50%;
+.set1,.set2{
+    border-bottom: 4px solid black;
 }
 .set p{
-    font-size: 20px;
+    font-size: 25px;
     line-height: 30px;
-    padding-bottom: 30px;
-}
-.set2
-{
-    position: absolute;
-    top: 40%;
-    left: 30%;
-    width: 50%;
-}
-.set3
-{
-    position: absolute;
-    bottom: 8%;
-    left: 30%;
-    width: 50%;
+    padding-bottom: 20px;
 }
 .fourth
 {
-    position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .fourth::before
 {
     content: "";
     position: absolute;  
     background-image: url(https://img.freepik.com/free-vector/blue-futuristic-waves-background-with-computer-code-technology_53876-119584.jpg);
-
     background-size: cover;
-    /* opacity: 0.95; */
     top: 0%;
     left: 0%;
     right: 0%;
     bottom: 0%;
-   
-
 }
 .fourth h1{
-    color: rgb(255, 255, 255);
-  
-    padding:0 10px;
+    color: rgb(239, 232, 232);
 }
-.my{
-    position: absolute;
-    top: 2%;
-    left: 2%;
-}
-.pro1
+.pro1,.pro2,.pro3
 {
-    position: absolute;
-    top: 15%;
-    left: 5%;
-    width: 25vw;
-    border: 5px solid rgb(8, 9, 7);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    border: 5px solid rgb(249, 231, 231);
+    text-align: center;
     overflow: hidden;
+    z-index: 100;
+    height: max-content;
+    margin: 20px 0px;
 }
 .fourth img 
 {
     height: 250px;
     width: 400px;
 }
-.pro2
-{
-    position: absolute;
-    top: 56.5%;
-    left: 37%;
-    width: 25vw;
-    border: 5px solid rgb(8, 9, 7);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-}
-.pro3
-{
-    position: absolute;
-    top: 15%;
-    right: 5%;
-    width: 25vw;
-    border: 5px solid rgb(8, 9, 7);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-}
-
 .last
 {
     height:100vh;
     width: 100vw;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background-color:rgb(97, 185, 217);
 }
 .cont
 {
-    position: absolute;
-    left: 45%;
     height: 200px;
 }
 .collab
 {
-    position: absolute;
-    top: 30%;
-    left: 35%;
+    
     font-size: 40px;
-
+    text-align: center;
 }
+
 .footer
 {
-    position: absolute;
-    bottom: 4%;
-    left: 43%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  
 }
-
-.images img{
-    height: 25px;
-    border-radius: 40px;
-    padding: 0 4px;
-}
-.images img:hover
+.images2 
 {
-    cursor: pointer;
+    display: flex;
+    padding: 0 20px;
+}
+.images2 img{
+    height: 20px;
+    padding: 0% 5px;
+}
+@media screen and  (max-width:800px) {
+    .third{
+        flex-direction: column;
+    }
+    .second{
+        display: block;
+    }
+    .details {
+        max-width: 250px;
+        margin-inline: auto;
+        margin-top: 23% ;
+    }
+
+    .image img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 0.4;
+    }
+}
+@media screen and (max-width:500px) {
+     .tags{
+        display: none;
+     }
+     .ham {
+        display:block;
+        background-color: grey;
+        min-height: 50px;
+     }
+     .ele{
+        display: none;
+     }
+     .ham:hover .ele
+     {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        position: absolute;
+        top:5%;
+        right:0%;
+        background-color: gray;
+        border-bottom-right-radius:20px;
+        border-bottom-left-radius:20px;
+     }
+    
 }
