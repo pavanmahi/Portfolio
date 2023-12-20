@@ -167,9 +167,12 @@ button:hover
     justify-content: space-between;
     background-color:rgb(97, 185, 217);
 }
-.cont
+.contact
 {
     height: 200px;
+}
+.contact a{
+    text-decoration: none;
 }
 .collab
 {
