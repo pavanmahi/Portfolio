@@ -128,7 +128,7 @@ button:hover
     margin-top:8% ;
 }
 .set1,.set2{
-    border-bottom: 4px solid white;
+    border-bottom: 4px solid red;
 }
 .set p{
     font-size: 25px;
