@@ -29,11 +29,6 @@ body{
 {
     padding: 0px 20px;
 }
-.navbar h2:hover
-{
-    cursor: pointer;
-    color:rgb(5, 36, 232);
-}
 .ham
 {
     display: none;
@@ -48,7 +43,7 @@ body{
     color: black;
 }
 .tags a:hover,.ham a:hover{
-    color: white; 
+    color: rgb(236, 240, 238); 
 }
 .ham img{
     position: absolute;
@@ -83,6 +78,7 @@ body{
     padding: 10px;
     color: rgb(6, 3, 2);
     text-decoration:underline;
+    z-index: 10;
 }
 button:hover
 {
@@ -101,7 +97,22 @@ button:hover
     width: 100vw;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: rgb(111, 176, 225);
+    color: aliceblue;
+}
+.third::before
+{
+    content: "";
+    background-image: url(skill.jpg);
+    position:absolute;
+    background-size: cover;
+   top: 0%;
+   left: 0%;
+   right: 0%;
+   bottom: 0%;
+   
+}
+.skills h1{
+    color: white!important;
 }
 .skills p{
     padding: 10px;
@@ -119,6 +130,10 @@ button:hover
     font-size: 25px;
     line-height: 30px;
     padding-bottom: 20px;
+    /* color: rgb(224, 218, 218); */
+}
+.set h1{
+    color: rgb(5, 238, 55);
 }
 .fourth
 {
@@ -152,6 +167,10 @@ button:hover
     height: max-content;
     margin: 20px 0px;
 }
+.pro2 a
+{
+    text-decoration-color: rgb(221, 203, 6);
+}
 .fourth img 
 {
     height: 250px;
@@ -165,14 +184,32 @@ button:hover
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color:rgb(97, 185, 217);
+    background-color:rgb(33, 162, 176);
+}
+.last::before
+{
+    content: "";
+    position: absolute;
+    background-image: url(contact.jpg);
+    background-size: cover;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    opacity: 0.5;
 }
 .contact
 {
     height: 200px;
+    align-items: center;
+}
+.contact p{
+    font-size: 20px;
+    color: rgb(2, 250, 64);
 }
 .contact a{
-    text-decoration: none;
+    color: rgb(233, 227, 227);
+    font-size: large;
 }
 .collab
 {
@@ -195,7 +232,11 @@ button:hover
 .images2 img{
     height: 20px;
     padding: 0% 5px;
-    cursor:pointer;
+    cursor: pointer;
+}
+.collab_info p
+{
+    font-size: medium;
 }
 @media screen and  (max-width:800px) {
     .third{
@@ -224,7 +265,7 @@ button:hover
      }
      .ham {
         display:block;
-       background-color: rgb(181, 142, 217);
+        background-color: rgb(181, 142, 217);
         min-height: 50px;
      }
      .ele{
@@ -234,11 +275,11 @@ button:hover
      {
         display: flex;
         flex-direction: column;
-        align-items:flex-end;
+        align-items:center;
         position: absolute;
-        top:50%;
+        top:80%;
         right:0%;
-       background-color: rgb(181, 142, 217);
+        background-color: rgb(181, 142, 217);
         border-bottom-right-radius:20px;
         border-bottom-left-radius:20px;
      }
