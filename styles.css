@@ -285,15 +285,16 @@ button:hover
      }
     
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
     .fourth img
      {
-        height: 90%;
+        height: auto;
         width: 98%;
      }
      .pro1,.pro2,.pro3
      {
         border: 3px solid white;
+        width: 80%;
      }
 
 }
