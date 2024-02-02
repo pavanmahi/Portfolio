@@ -84,6 +84,11 @@ body{
     text-decoration:underline;
     z-index: 10;
 }
+.resume a 
+{
+    color: black;
+    text-decoration: none;
+}
 button:hover
 {
     cursor: pointer;
@@ -171,7 +176,7 @@ button:hover
     /* height: max-content; */
     margin: 20px 0px;
 }
-.pro2 a
+.pro2 a,.pro1 a
 {
     text-decoration-color: rgb(221, 203, 6);
 }
