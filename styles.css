@@ -7,20 +7,19 @@
     scroll-behavior:smooth;
     position: relative;
 }
-
-.top
+/* .top
 {
     position: absolute;
     right: 10%;
     bottom: 20%;
-}
+} */
 body{
     margin: 0px;
     padding: 0%;
     overflow-x: hidden;    overflow-y: auto;
 }
 .navbar{
-    
+    position: fixed;
     width: 100vw;
     z-index: 1001;
     background-color: rgb(181, 142, 217);
@@ -34,7 +33,10 @@ body{
     display: none;
 }
 .ham img:hover{ cursor: pointer;}
-
+.outer{
+    top: 0%;
+    position: relative;
+}
 .tags a,.ham a{
     text-decoration: none;
     font-size: x-large;
@@ -56,6 +58,8 @@ body{
 {
     display: flex;
     align-items: center;
+    /* background-image:url(space_bg.jpg); */
+    top: 0%;
 }
 .details,.image
 {
@@ -63,6 +67,7 @@ body{
 }
 .inner img{
     width: 80%;
+    border-radius: 50%;
 }
 .details p{
     line-height: 25px;
@@ -81,7 +86,7 @@ body{
     border-radius: 5px;
     padding: 10px;
     color: rgb(6, 3, 2);
-    text-decoration:underline;
+    /* text-decoration:underline; */
     z-index: 10;
 }
 .resume a 
@@ -111,7 +116,7 @@ button:hover
 .third::before
 {
     content: "";
-    background-image: url(skill.jpg);
+    background-image: url(assets/skill.jpg);
     position:absolute;
     background-size: cover;
    top: 0%;
@@ -157,7 +162,8 @@ button:hover
 {
     content: "";
     position: absolute;  
-    background-image: url(https://img.freepik.com/free-vector/blue-futuristic-waves-background-with-computer-code-technology_53876-119584.jpg);
+    background-image: url(assets/space_bg.jpg);
+    /* https://img.freepik.com/free-vector/blue-futuristic-waves-background-with-computer-code-technology_53876-119584.jpg */
     background-size: cover;
     top: 0%;
     left: 0%;
@@ -176,7 +182,7 @@ button:hover
     /* height: max-content; */
     margin: 20px 0px;
 }
-.pro2 a,.pro1 a
+.pro2 a,.pro1 a ,.pro3 a
 {
     text-decoration-color: rgb(221, 203, 6);
 }
@@ -200,7 +206,7 @@ button:hover
 {
     content: "";
     position: absolute;
-    background-image: url(contact.jpg);
+    background-image: url(assets/contact.jpg);
     background-size: cover;
     top: 0%;
     left: 0%;
@@ -259,8 +265,12 @@ button:hover
     .third{
         flex-direction: column;
     }
+    /* .navbar{
+        position: relative;
+    } */
     .second{
         display: block;
+        /* position: absolute; */
     }
     .details {
         max-width: 250px;
@@ -272,6 +282,7 @@ button:hover
     .image img{
         position: absolute;
         left: 50%;
+        top: 50%;
         transform: translate(-50%,-150%);
         opacity: 0.5;
     }
