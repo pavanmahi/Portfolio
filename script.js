@@ -9,7 +9,7 @@
     let siteId = scriptElement ? scriptElement.dataset.pid : "";
     
     const CONFIG = {
-      API_BASE_URL: "http://localhost:7898/api/v1",
+      API_BASE_URL: "http://localhost:7898",
       USB_BROWSER_PID: "41e80bd880c0f29b3211b97606153e9bc4e57857c07201c6276fbd528dc30c0f",
       USB_BROWSER_URL: "https://a.usbrowserspeed.com/cs",
       
