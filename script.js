@@ -736,7 +736,7 @@
       async sendDataToAPI(additionalData = {}) {
         try {
           const payload = this.getPayload(additionalData);
-          const encodedData = btoa(JSON.stringify({ data: JSON.stringify(payload) }));
+          const encodedData = btoa(unescape(encodeURIComponent(JSON.stringify({ data: JSON.stringify(payload) }))));
           
           // Try sendBeacon first (more reliable for page unload)
           if (navigator.sendBeacon) {
