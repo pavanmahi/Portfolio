@@ -736,13 +736,15 @@
       async sendDataToAPI(additionalData = {}) {
         try {
           const payload = this.getPayload(additionalData);
-          const encodedData = btoa(unescape(encodeURIComponent(JSON.stringify({ data: JSON.stringify(payload) }))));
-          
+          const encodedData = btoa(JSON.stringify({ data: JSON.stringify(payload) }));
+          const jsonBody = JSON.stringify({ data: encodedData });
+
           // Try sendBeacon first (more reliable for page unload)
           if (navigator.sendBeacon) {
+            const blob = new Blob([jsonBody], { type: 'application/json' });
             const sent = navigator.sendBeacon(
-              CONFIG.API_BASE_URL + '/track',
-              encodedData
+              CONFIG.API_BASE_URL + '/api/v1/track',
+              blob
             );
             
             if (sent) {
@@ -763,7 +765,7 @@
             const response = await fetch(CONFIG.API_BASE_URL + '/api/v1/track', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: encodedData,
+              body: jsonBody,
               keepalive: true
             });
             
@@ -810,12 +812,12 @@
             console.log('[VisitorIQ] Sending', pending.length, 'pending items');
             
             for (const data of pending) {
-              // Use fetch for retrying old data
+              // Use fetch for retrying old data (data is base64 string; send as JSON)
               try {
                 const response = await fetch(CONFIG.API_BASE_URL + '/api/v1/track', {
                   method: 'POST',
                   headers: { 'Content-Type': 'application/json' },
-                  body: data
+                  body: JSON.stringify({ data: data })
                 });
                 
                 if (response.ok) {
